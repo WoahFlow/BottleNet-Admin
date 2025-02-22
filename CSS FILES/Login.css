@@ -1,0 +1,133 @@
+/* Import SF Pro Display */
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('/assets/fonts/SFProDisplay-Regular.woff2') format('woff2'),
+         url('/assets/fonts/SFProDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #005F56;
+    font-family: 'SF Pro Display', Arial, sans-serif;
+}
+
+
+/* Login Wrapper */
+.login-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Ensure it centers properly */
+    width: 100%;
+}
+
+
+/* Login Header */
+.login-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+.login-header h1 {
+    margin: 0;
+    font-size: 45px;
+    font-weight: 600;
+    color: white;
+}
+
+/* Login Container (Now Wider) */
+.login-container {
+    background-color: #ffffff;
+    padding: 40px 50px; /* Reduce padding */
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px; /* Adjust width */
+    text-align: center;
+    border: 3px solid #008c7a;
+}
+
+
+/* Input Fields */
+.login-form .form-group {
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.login-form input {
+    width: calc(100% - 20px);
+    padding: 14px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    font-family: 'SF Pro Display', sans-serif;
+    text-indent: 10px;
+}
+
+.login-form input:focus {
+    border-color: #008c7a;
+}
+
+/* Password Field with Toggle Icon */
+.password-group {
+    position: relative;
+}
+
+.password-group .toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.password-group .toggle-password img {
+    width: 24px;
+    height: auto;
+}
+
+/* Login Button */
+.login-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #008c7a;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+.login-button:hover {
+    background-color: #007366;
+}
+
+/* Forgot Password Link */
+.forgot-password {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #008c7a;
+    text-decoration: none;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
